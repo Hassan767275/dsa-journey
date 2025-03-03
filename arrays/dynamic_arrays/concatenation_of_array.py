@@ -1,10 +1,8 @@
-#Concating an array
-# without extend
 class Solution:
-    def getConcatenation(self, nums):
-        n = len(nums)
-        ans = [0] * (2 * n)
-        for i in range(n):
-            ans[i] = nums[i]
-            ans[i + n] = nums[i]
-        return ans
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        return nums + nums
+        # ans = []
+        # for i in range(2):
+        #     for num in nums:
+        #         ans.append(num)
+        # return ans
